@@ -33,7 +33,7 @@ Publishing error pages to ``resources/views/errors/`` (required)
 php artisan vendor:publish --provider="EnnioSousa\ServerErrorPages\ServerErrorPagesServiceProvider" --tag=errors
 ```
 
-Publishing error page template (optional)
+Publishing error pages (optional)
 ```bash
 php artisan vendor:publish --provider="EnnioSousa\ServerErrorPages\ServerErrorPagesServiceProvider" --tag=views
 ```
@@ -44,14 +44,14 @@ php artisan vendor:publish --provider="EnnioSousa\ServerErrorPages\ServerErrorPa
 ```
 
 ## Custom HTTP Error Pages
-First create new with code error at folder ```resources/views/errors``` like specified in [Laravel docs](https://laravel.com/docs/5.5/errors#custom-http-error-pages).
+First create new file with HTTP code error at folder ```resources/views/errors``` like specified in [Laravel docs](https://laravel.com/docs/5.5/errors#custom-http-error-pages).
 
-This file content needs be
+This file's content needs be
 ```
 @include('server-error-pages::template', compact($exception))
 ```
 
-Last add to i18n file custom messages respecting the template:
+Last step is add to file ``resrouces/lang/vendor/en/server-error-pages.php`` custom messages following the template:
 ```php
 <?php
 return [
