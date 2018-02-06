@@ -1,4 +1,4 @@
-# Server Error Pages
+# Laravel Server Error Pages
 Laravel server-side error pages inspired [alexphelps/server-error-pages](https://github.com/alexphelps/server-error-pages) repository.
 
 ## Languages Avaliables
