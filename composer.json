@@ -4,7 +4,7 @@
     "keywords": ["error pages", "laravel"],
     "type": "package",
     "version": "0.1",
-    "license": "Apache License Version 2.0",
+    "license": "Apache-2.0",
     "authors": [
         {
             "name": "Ennio Sousa",
