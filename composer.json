@@ -1,14 +1,10 @@
 {
     "name": "enniosousa/server-error-pages",
     "description": "Laravel server-side error pages",
+    "keywords": ["error pages", "laravel"],
     "type": "package",
     "version": "0.1",
-    "licenses": [
-        {
-            "name": "Apache License Version 2.0",
-            "url": "https://www.apache.org/licenses/LICENSE-2.0"
-        }
-    ],
+    "license": "Apache License Version 2.0",
     "authors": [
         {
             "name": "Ennio Sousa",
@@ -16,5 +12,21 @@
             "web": "https://enniosousa.com.br"
         }
     ],
-    "require": {}
+    "require": {
+        "php": ">=7.0.0",
+        "laravel/framework": "5.5.*",
+    },
+    "autoload": {
+        "psr-0": {
+            "EnnioSousa\\ServerErrorPages\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "EnnioSousa\\ServerErrorPages\\ServerErrorPagesServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable"
 }
