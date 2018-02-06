@@ -3,7 +3,7 @@
     "description": "Laravel server-side error pages",
     "keywords": ["error pages", "laravel"],
     "type": "package",
-    "version": "0.1",
+    "version": "1.0.0",
     "license": "Apache-2.0",
     "authors": [
         {
