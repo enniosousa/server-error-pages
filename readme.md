@@ -2,7 +2,9 @@
 Laravel server-side error pages inspired [alexphelps/server-error-pages](https://github.com/alexphelps/server-error-pages) repository.
 
 ## Languages Avaliables
-English and Brazilian Portuguese
+* English by [alexphelps/server-error-pages](https://github.com/alexphelps/server-error-pages)
+* Brazilian Portuguese by [Ennio Sousa](https://enniosousa.com.br)
+* Spanish by [Patricia Carmona](https://github.com/carmonapacs)
 
 ## Errors Avaliables
 * 403 Forbidden
