@@ -56,8 +56,8 @@ return [
         'description' => "La página ha expirado debido a inactividad <em>:domain</em>.",
         'icon' => "fa fa-lock red",
         'button' => [
-            'name' => "Volver a cargar",
-            'link_to' => "reload",
+            "name" => "Llévame a la página de inicio",
+            "link_to" => "home"
         ],
         'why' => [
             'title' => "¿Que pasó?",

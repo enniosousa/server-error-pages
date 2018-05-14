@@ -57,8 +57,8 @@ return [
         'description' => "A página expirou por inatividade <em>:domain</em>.",
         'icon' => "fa fa-lock red",
         'button' => [
-            'name' => 'Tente esta página novamente',
-            'link_to' => 'reload',
+            'name' => 'Leve-me à página inicial',
+            'link_to' => 'home',
         ],
         'why' => [
             'title' => 'O que aconteceu?',

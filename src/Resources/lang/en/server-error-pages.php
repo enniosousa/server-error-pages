@@ -56,8 +56,8 @@ return [
         'description' => "The page has expired due to inactivity <em>:domain</em>.",
         'icon' => "fa fa-lock red",
         'button' => [
-            'name' => "Try This Page Again",
-            'link_to' => "reload",
+            'name' => "Take Me To The Homepage",
+            'link_to' => "home",
         ],
         'why' => [
             'title' => "What happened?",
