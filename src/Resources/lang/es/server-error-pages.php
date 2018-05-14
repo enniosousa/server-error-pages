@@ -51,6 +51,30 @@ return [
             ]
         ]
     ],
+    '405' => [
+        'title' => "405 Method not allowed",
+        'description' => "Solicitó esta página con un método HTTP no válido o inexistente <em>:domain</em>.",
+        'icon' => "fa fa-ban orange",
+        'button' => [
+            'name' => "Volver a la página anterior",
+            'link_to' => "previous",
+        ],
+        'why' => [
+            'title' => "¿Que pasó?",
+            'description' => "El error 405 indica que el método de solicitud es conocido por el servidor, pero se ha deshabilitado y no se puede usar."
+        ],
+        'what_do' => [
+            'title' => "¿Que puedo hacer?",
+            'visitor' => [
+                'title' => "Si eres un visitante del sitio",
+                'description' => "Vaya a la página anterior y vuelva a intentarlo. Si necesita asistencia inmediata, envíenos un correo electrónico."
+            ],
+            'owner' => [
+                'title' => "Si eres el propietario del sitio",
+                'description' => "Vaya a la página anterior y vuelva a intentarlo. Si el error persiste, póngase en contacto con su proveedor de sitio web."
+            ],
+        ],
+    ],
     '419' => [
         'title' => '419 Authentication Timeout',
         'description' => "La página ha expirado debido a inactividad <em>:domain</em>.",

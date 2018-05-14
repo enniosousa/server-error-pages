@@ -51,6 +51,30 @@ return [
             ],
         ],
     ],
+    '405' => [
+        'title' => "405 Method not allowed",
+        'description' => "You requested this page with an invalid or nonexistent HTTP method on <em>:domain</em>.",
+        'icon' => "fa fa-ban orange",
+        'button' => [
+            'name' => "Back to previous page",
+            'link_to' => "previous",
+        ],
+        'why' => [
+            'title' => "What happened?",
+            'description' => "A 405 error status indicates that the request method is known by the server but has been disabled and cannot be used."
+        ],
+        'what_do' => [
+            'title' => "What can I do?",
+            'visitor' => [
+                'title' => "If you're a site visitor",
+                'description' => "Go to previous page and retry. If you need immediate assistance, please send us an email instead."
+            ],
+            'owner' => [
+                'title' => "If you're the site owner",
+                'description' => "Go to previous page and retry. If the error persists get in touch with your website provider if you believe this to be an error."
+            ],
+        ],
+    ],
     '419' => [
         'title' => '419 Authentication Timeout',
         'description' => "The page has expired due to inactivity <em>:domain</em>.",

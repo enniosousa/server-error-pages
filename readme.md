@@ -9,6 +9,7 @@ Laravel server-side error pages inspired [alexphelps/server-error-pages](https:/
 ## Errors Avaliables
 * 403 Forbidden
 * 404 Not Found
+* 405 Method not allowed
 * 419 Authentication Timeout
 * 429 Too Many Requests
 * 500 Internal Server Error
