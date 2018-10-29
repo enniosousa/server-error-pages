@@ -7,6 +7,8 @@ Laravel server-side error pages inspired [alexphelps/server-error-pages](https:/
 * Spanish by [Patricia Carmona](https://github.com/carmonapacs)
 
 ## Errors Avaliables
+* 400 Bad Request
+* 401 Unauthorized
 * 403 Forbidden
 * 404 Not Found
 * 405 Method not allowed
@@ -16,7 +18,7 @@ Laravel server-side error pages inspired [alexphelps/server-error-pages](https:/
 * 502 Bad Gateway
 * 503 Service Unavailable
 * 504 Gateway Timeout
-* Maintenance (usend when ```php artisan down```)
+* Maintenance (used when ```php artisan down```)
 
 ## Instalation
 Install package via Composer
