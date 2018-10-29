@@ -3,6 +3,54 @@
 //| link_to option can be only 'home', 'reload' or 'previous'
 //|----------------------------------------------------
 return [
+    '400' => [
+        'title' => "400 Bad Request",
+        'description' => "Sorry! The <em>:domain</em> server could not understand the request due to invalid syntax.",
+        'icon' => "fa fa-ban red",
+        'button' => [
+            'name' => "Back to previous page",
+            'link_to' => "previous",
+        ],
+        'why' => [
+            'title' => "What happened?",
+            'description' => "A 400 error status indicates that the server could not understand the request due to invalid syntax."
+        ],
+        'what_do' => [
+            'title' => "What can I do?",
+            'visitor' => [
+                'title' => "If you're a site visitor",
+                'description' => "Please use your browsers back button and check that you fill the form correctly. If you need immediate assistance, please send us an email instead."
+            ],
+            'owner' => [
+                'title' => "If you're the site owner",
+                'description' => "Please check that you everything right, or get in touch with your website provider if you believe this to be an error."
+            ],
+        ],
+    ],
+    '401' => [
+        'title' => "401 Unauthorized",
+        'description' => "Oops! You need be authenticated to access this resource on <em>:domain</em>.",
+        'icon' => "fa fa-lock red",
+        'button' => [
+            'name' => "Try This Page Again",
+            'link_to' => "reload",
+        ],
+        'why' => [
+            'title' => "What happened?",
+            'description' => "A 401 error status indicates that the request has not been applied because it lacks valid authentication credentials for the target resource."
+        ],
+        'what_do' => [
+            'title' => "What can I do?",
+            'visitor' => [
+                'title' => "If you're a site visitor",
+                'description' => "Refresh this page or try do login again. If you need immediate assistance, please send us an email instead."
+            ],
+            'owner' => [
+                'title' => "If you're the site owner",
+                'description' => "Refresh this page or try do login again. If the error persists get in touch with your website provider if you believe this to be an error."
+            ],
+        ],
+    ],
     '403' => [
         'title' => "403 Forbidden",
         'description' => "Sorry! You don't have access permissions for that on <em>:domain</em>.",

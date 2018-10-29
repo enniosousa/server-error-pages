@@ -4,6 +4,54 @@
 //| link_to option can be only 'home', 'reload' or 'previous'
 //|----------------------------------------------------
 return [
+    '400' => [
+        'title' => '400 Bad Request',
+        'description' => 'Lamento! O servidor de <em>:domain</em> não conseguiu entender a requisição devido à sintaxe inválida.',
+        'icon' => 'fa fa-ban red',
+        'button' => [
+            'name' => "Voltar à página anterior",
+            'link_to' => "previous",
+        ],
+        'why' => [
+            'title' => 'O que aconteceu?',
+            'description' => 'O erro 400 indica que o servidor não conseguiu entender a requisição devido à sintaxe inválida.',
+        ],
+        'what_do' => [
+            'title' => 'O que posso fazer?',
+            'visitor' => [
+                'title' => 'Se você é um visitante do site',
+                'description' => 'Por favor volte a página anterior e verifique se configurou ou preencheu o formulário corretamente. Se você precisar de assistência imediata, por favor entre em contato.',
+            ],
+            'owner' => [
+                'title' => 'Se você é o proprietário do site',
+                'description' => 'Verifique se fez tudo corretamente, ou entre em contato com provedor do site se você acredita que isso é um erro.',
+            ],
+        ],
+    ],
+    '401' => [
+        'title' => '401 Unauthorized',
+        'description' => 'Opa! Você precisa estar autenticado para acessar este recurso em <em>:domain</em>.',
+        'icon' => 'fa fa-lock red',
+        'button' => [
+            'name' => "Voltar à página anterior",
+            'link_to' => "previous",
+        ],
+        'why' => [
+            'title' => 'O que aconteceu?',
+            'description' => 'O erro 401 indica que a solicitação não foi aplicada porque não possui credenciais de autenticação válidas.',
+        ],
+        'what_do' => [
+            'title' => 'O que posso fazer?',
+            'visitor' => [
+                'title' => 'Se você é um visitante do site',
+                'description' => "Atualize a página ou tente fazer login novamente. Se você precisar de assistência imediata, por favor entre em contato."
+            ],
+            'owner' => [
+                'title' => 'Se você é o proprietário do site',
+                'description' => "Atualize a página ou tente fazer login novamente. Se o erro persistir entre em contato com provedor do site."
+            ],
+        ],
+    ],
     '403' => [
         'title' => '403 Forbidden',
         'description' => 'Lamento! Você não tem permissão de acesso para isso em <em>:domain</em>.',
