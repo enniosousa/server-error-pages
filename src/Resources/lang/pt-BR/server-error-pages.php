@@ -124,6 +124,30 @@ return [
             ],
         ],
     ],
+    '408' => [
+        'title' => '408 Request Timeout',
+        'description' => 'O servidor em <em>:domain</em> excedeu o limite de tempo execução antes de concluir a tarefa.',
+        'icon' => 'fa fa-clock-o red',
+        'button' => [
+            'name' => 'Tente esta página novamente',
+            'link_to' => 'reload',
+        ],
+        'why' => [
+            'title' => 'O que aconteceu?',
+            'description' => 'O erro 408 indica que o tempo limite de execução do servidor foi atingido antes de concluir a requisição.',
+        ],
+        'what_do' => [
+            'title' => 'O que posso fazer?',
+            'visitor' => [
+                'title' => 'Se você é um visitante do site',
+                'description' => 'Atualize a página e tente novamente.',
+            ],
+            'owner' => [
+                'title' => 'Se você é o proprietário do site',
+                'description' => 'Atualize a página. Se o erro persistir entre em contato com provedor do site.',
+            ],
+        ],
+    ],
     '419' => [
         'title' => '419 Authentication Timeout',
         'description' => "A página expirou por inatividade <em>:domain</em>.",

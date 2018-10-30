@@ -123,6 +123,30 @@ return [
             ],
         ],
     ],
+    '408' => [
+        'title' => "408 Request Timeout",
+        'description' => "The server <em>:domain</em> would like to shut down this unused connection.",
+        'icon' => "fa fa-clock-o red",
+        'button' => [
+            'name' => "Try This Page Again",
+            'link_to' => "reload",
+        ],
+        'why' => [
+            'title' => "What happened?",
+            'description' => "A 408 error status indicates that the server would like to shut down this unused connection. It is sent on an idle connection by some servers, even without any previous request by the client."
+        ],
+        'what_do' => [
+            'title' => "What can I do?",
+            'visitor' => [
+                'title' => "If you're a site visitor",
+                'description' => "Refresh this page and try again. If you need immediate assistance, please send us an email instead."
+            ],
+            'owner' => [
+                'title' => "If you're the site owner",
+                'description' => "Refresh this page and try again. If the error persists get in touch with your website provider if you believe this to be an error."
+            ],
+        ],
+    ],
     '419' => [
         'title' => '419 Authentication Timeout',
         'description' => "The page has expired due to inactivity <em>:domain</em>.",
