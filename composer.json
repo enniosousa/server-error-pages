@@ -3,7 +3,7 @@
     "description": "Laravel server-side error pages",
     "keywords": ["error pages", "laravel"],
     "type": "package",
-    "version": "v1.0.4",
+    "version": "v1.0.5",
     "license": "MIT",
     "authors": [
         {
@@ -12,7 +12,7 @@
         }
     ],
     "require": {
-        "laravel/framework": "5.5.*|5.6.*|5.7.*"
+        "laravel/framework": "5.5.*|5.6.*|5.7.*|5.8.*"
     },
     "autoload": {
         "psr-0": {
