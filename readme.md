@@ -1,10 +1,15 @@
 # Laravel Server Error Pages
-Laravel server-side error pages inspired [alexphelps/server-error-pages](https://github.com/alexphelps/server-error-pages) repository.
+[![Latest Stable Version](https://poser.pugx.org/enniosousa/server-error-pages/v/stable)](https://packagist.org/packages/enniosousa/server-error-pages)
+[![Total Downloads](https://poser.pugx.org/enniosousa/server-error-pages/downloads)](https://packagist.org/packages/enniosousa/server-error-pages)
+[![License](https://poser.pugx.org/enniosousa/server-error-pages/license)](https://packagist.org/packages/enniosousa/server-error-pages)
 
-## Languages Avaliables
-* English by [alexphelps/server-error-pages](https://github.com/alexphelps/server-error-pages)
-* Brazilian Portuguese by [Ennio Sousa](https://enniosousa.com.br)
-* Spanish by [Patricia Carmona](https://github.com/carmonapacs)
+### Table of Contents
+* [Errors Avaliables](#errors-avaliables)
+* [Languages Avaliables](#languages-avaliables)
+* [Installation](#installation)
+* [How to Create Custom Error Pages](#how-to-create-custom-error-pages)
+* [Custom Error Messages](#custom-error-messages)
+
 
 ## Errors Avaliables
 * 400 Bad Request
@@ -20,12 +25,17 @@ Laravel server-side error pages inspired [alexphelps/server-error-pages](https:/
 * 504 Gateway Timeout
 * Maintenance (used when ```php artisan down```)
 
-## Instalation
-Install package via Composer
+### Languages Avaliables
+* English by [alexphelps/server-error-pages](https://github.com/alexphelps/server-error-pages)
+* Brazilian Portuguese by [Ennio Sousa](https://enniosousa.com.br)
+* Spanish by [Patricia Carmona](https://github.com/carmonapacs)
+
+## Installation
+**Step 1**:Install package via Composer
 ```bash
 composer require enniosousa/server-error-pages
 ```
-Next, if using Laravel 5, include the service provider within your `config/app.php` file.
+**Step 2**: If you are using Laravel 5, include the service provider within your `config/app.php` file.
 
 ```php
 'providers' => [
@@ -33,30 +43,20 @@ Next, if using Laravel 5, include the service provider within your `config/app.p
 ];
 ```
 
-Publishing error pages to ``resources/views/errors/`` (required)
+**Step 3**: Publish vendor provider
 ```bash
-php artisan vendor:publish --provider="EnnioSousa\ServerErrorPages\ServerErrorPagesServiceProvider" --tag=errors
+php artisan vendor:publish --provider="EnnioSousa\ServerErrorPages\ServerErrorPagesServiceProvider"
 ```
 
-Publishing error pages (optional)
-```bash
-php artisan vendor:publish --provider="EnnioSousa\ServerErrorPages\ServerErrorPagesServiceProvider" --tag=views
-```
+## How to Create Custom Error Pages
+**Step 1**:  Create new empty file named with HTTP code error at folder `resources/views/errors` like specified in [Laravel docs](https://laravel.com/docs/5.5/errors#custom-http-error-pages).
 
-Publishing i18n (optional)
-```bash
-php artisan vendor:publish --provider="EnnioSousa\ServerErrorPages\ServerErrorPagesServiceProvider" --tag=lang
-```
-
-## Custom HTTP Error Pages
-First create new file with HTTP code error at folder ```resources/views/errors``` like specified in [Laravel docs](https://laravel.com/docs/5.5/errors#custom-http-error-pages).
-
-This file's content needs be
+**Step 2**: Put the following content in the file you just created.
 ```
 @include('server-error-pages::template', compact($exception))
 ```
 
-Last step is add to file ``resrouces/lang/vendor/en/server-error-pages.php`` custom messages following the template:
+**Step 3**: Add to file `resrouces/lang/vendor/en/server-error-pages.php` custom messages following the template:
 ```php
 <?php
 return [
