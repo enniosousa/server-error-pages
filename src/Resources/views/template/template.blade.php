@@ -52,8 +52,10 @@ $code = app()->isDownForMaintenance() ? 'maintenance' : $exception->getStatusCod
                 <h1><i class="{!! trans("server-error-pages::server-error-pages.$code.icon") !!}"></i> {!! trans("server-error-pages::server-error-pages.$code.title") !!}</h1>
                 <p class="lead">{!! config('app.env') === 'production' ? trans("server-error-pages::server-error-pages.$code.description", ['domain'=> request()->getHost()]) : $exception->getMessage() ?? trans("server-error-pages::server-error-pages.$code.description", ['domain'=> request()->getHost()]) !!}</p>
                 <p><a class="btn btn-default btn-lg" href="{!! 
-                      trans("server-error-pages::server-error-pages.$code.button.link_to") === 'home' ? url('/') :  trans("server-error-pages::server-error-pages.$code.button.link_to") === 'reload' 
-                      ? url()->current() : url()->previous() !!}"><span class="green">{!! trans("server-error-pages::server-error-pages.$code.button.name") !!}</span></a></p>
+                      trans("server-error-pages::server-error-pages.$code.button.link_to") === 'home' 
+                      ? url('/') 
+                      :  (    trans("server-error-pages::server-error-pages.$code.button.link_to") === 'reload' ? url()->current() : url()->previous()    ) 
+                !!}"><span class="green">{!! trans("server-error-pages::server-error-pages.$code.button.name") !!}</span></a></p>
             </div>
         </div>
         <div class="container">
